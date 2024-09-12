@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main  # Branch to update (use "gh-pages" if using that branch for GitHub Pages)
+
+media_folder: "images/uploads"  # Where uploaded files will be stored in your repo
+public_folder: "/images/uploads"  # Folder to access uploaded files on your site
+
+collections:
+  - name: "news"
+    label: "News"
+    folder: "_news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
