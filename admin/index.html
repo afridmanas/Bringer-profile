@@ -18,5 +18,123 @@
         });
       }
     </script>
+
+font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #fff;
+            padding: 10px 0;
+            text-decoration: none;
+            border-bottom: 1px solid #555;
+        }
+
+        .sidebar a:hover {
+            background-color: #444;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .main-header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: calc(100% - 250px);
+            box-sizing: border-box;
+        }
+
+        .main-header h1 {
+            margin: 0;
+        }
+
+        .content {
+            margin-top: 60px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#users">Manage Users</a>
+        <a href="#posts">Manage Posts</a>
+        <a href="#settings">Settings</a>
+        <a href="#logout">Logout</a>
+    </div>
+
+    <div class="main-content">
+        <div class="main-header">
+            <h1>Admin Panel</h1>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <h3>Welcome to the Admin Dashboard</h3>
+                <p>Use the sidebar to navigate through different sections.</p>
+            </div>
+
+            <div class="card">
+                <h3>Latest Activity</h3>
+                <p>Here you can monitor recent activities in the system.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Admin Panel © 2024</p>
+        </div>
+    </div>
+
+
   </body>
 </html>
